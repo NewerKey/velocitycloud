@@ -15,6 +15,11 @@
   box-sizing: border-box;
 }
 
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
 /* Typography */
 html {
   font-size: 62.5%;
@@ -570,7 +575,10 @@ a {
 .block {
   --padding-vertical: 6rem;
   padding: var(--padding-vertical) 2rem;
-  border: 2px solid red;
+}
+
+.block__header {
+  text-align: center;
 }
 
 .block__heading {
@@ -589,4 +597,9 @@ a {
 .block--skewed-right {
   padding-bottom: calc(--padding-vertical) + 4rem;
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+}
+
+.block--skewed-left {
+  padding-bottom: calc(--padding-vertical) + 4rem;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
 }
