@@ -526,6 +526,9 @@ a {
   padding: 4rem;
   border-radius: 5px;
   margin-top: 10rem;
+  width: 980px;
+  align-items: center;
+  justify-content: center;
 }
 .callout__content {
   text-align: center;
@@ -619,12 +622,12 @@ a {
 }
 
 .block--skewed-right {
-  padding-bottom: calc(--padding-vertical) + 4rem;
+  padding-bottom: calc(var(--padding-vertical)) + 4rem;
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
 }
 
 .block--skewed-left {
-  padding-bottom: calc(--padding-vertical) + 4rem;
+  padding-bottom: calc(var(--padding-vertical)) + 4rem;
   clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
 }
 
@@ -805,6 +808,7 @@ a {
 .footer__heading {
   text-transform: uppercase;
   font-weight: 600;
+  color: #fff;
 }
 
 .footer__brand {
